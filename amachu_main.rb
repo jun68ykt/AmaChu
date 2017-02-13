@@ -49,10 +49,10 @@ begin
   # 処理対象ページをインクリメント
   current_page += 1
 
-end while(current_page <= ac.total_num_pages)
+end while (current_page <= ac.total_num_pages)
 
 # 6.終了処理
-total_amount = total_amount.to_s.reverse.gsub( /(\d{3})(?=\d)/, '\1,').reverse
+total_amount = total_amount.to_s.reverse.gsub(/(\d{3})(?=\d)/, '\1,').reverse
 puts("\n総合計：#{total_amount} 円")
 ac.quit
 
