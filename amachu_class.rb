@@ -26,8 +26,7 @@ class AmaChu
 
 		# 注文情報のURL
 		ORDER_HISTORY_URL = 'https://www.amazon.co.jp/gp/your-account/order-history/'
-		ORDER_HISTORY_PARAMS = 'ref=oh_aui_pagination_3_1?ie=UTF8' +
-															'&orderFilter=year-%d&search=&startIndex=%d'
+		ORDER_HISTORY_PARAMS = 'ref=oh_aui_pagination_3_1?ie=UTF8&orderFilter=year-%d&search=&startIndex=%d'
 
 		# 注文履歴の1ページごとの注文件数
 		NUM_ORDERS_PER_PAGE = 10
