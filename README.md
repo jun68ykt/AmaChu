@@ -23,7 +23,7 @@
 
 # 実現方法
 
-* [Selenium Webdriver](http://www.seleniumhq.org/projects/webdriver/) を使ってFireFoxで注文履歴ページを巡回さて欲しいデータを取得
+* [Selenium Webdriver](http://www.seleniumhq.org/projects/webdriver/) を使ってFireFoxで注文履歴ページを巡回させて欲しいデータを取得
 * 開発言語は Ruby 2.2
 * ローカルに、１注文に対して１ファイルをJSONで出力
 
