@@ -214,10 +214,15 @@ class AmaChu
     # 注文履歴のページに遷移
     @driver.get(Constants::ORDER_HISTORY_URL)
 
-    # ログイン情報を入力してサブミットボタンをクリック
+    # ログイン情報を入力して次へ進むボタンをクリック
+    puts @driver.find_element(:id, 'ap_email').to_s
     @driver.find_element(:id, 'ap_email').send_keys(@user)
+    @driver.find_element(:id, 'continue').click
+    @driver.save_screenshot('after_continue.png')
+    # パスワード情報を入力してサブミットボタンをクリック
     @driver.find_element(:id, 'ap_password').send_keys(@password)
     @driver.find_element(:id, 'signInSubmit').click
+    @driver.save_screenshot('after_submit.png')
 
     # 数秒待つ
     sleep(Constants::WAITING_SECONDS_AFTER_LOGIN)
